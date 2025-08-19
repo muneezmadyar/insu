@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* *{
+    background-color: black;
+    color: white;
+} */
+
+/* styles.css */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px; /* scrollbar ka width */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgb(214, 213, 213); /* track ka color (gray-800) */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #005190; /* scrollbar ka thumb color (green-600) */
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #005190; /* hover color (green-700) */
+}
