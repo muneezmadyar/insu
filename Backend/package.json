@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js",
-    "seed": "node scripts/seedPlans.js",
-    "dropdowns": "node seed/seedDropdowns.js"
+    "dev": "nodemon api/server.js"
   },
   "keywords": [],
   "author": "",

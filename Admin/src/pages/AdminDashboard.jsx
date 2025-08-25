@@ -1590,13 +1590,13 @@ const totalCarPlans = plans.length;
         value={newPlan.company}
         onChange={(e) => setNewPlan({ ...newPlan, company: e.target.value })}
         className="border p-2 rounded-lg bg-white dark:bg-gray-800 text-black dark:text-white w-full"
-      />
+      /> <br />
       <input
         placeholder="Plan Name"
         value={newPlan.name}
         onChange={(e) => setNewPlan({ ...newPlan, name: e.target.value })}
         className="border p-2 rounded-lg bg-white dark:bg-gray-800 text-black dark:text-white w-full"
-      />
+      /> <br />
       <input
         placeholder="Rate"
         type="number"

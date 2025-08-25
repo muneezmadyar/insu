@@ -109,14 +109,14 @@ const Bikeplan = ({ darkMode }) => {
           value={bikePlan.company}
           onChange={handleBikePlanChange}
           className="border p-2 rounded-lg bg-white dark:bg-gray-800 text-black dark:text-white w-full"
-        />
+        /> <br />
         <input
           name="name"
           placeholder="Plan Name"
           value={bikePlan.name}
           onChange={handleBikePlanChange}
           className="border p-2 rounded-lg bg-white dark:bg-gray-800 text-black dark:text-white w-full"
-        />
+        /> <br />
         <input
           type="number"
           name="rate"
