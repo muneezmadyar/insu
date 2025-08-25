@@ -1,8 +1,9 @@
 # ignore env files
 .env
+node_modules
+
 Frontend/.env
 Backend/.env
 Admin/.env
 
 # node_modules sab folder ka ignore
-node_modules
