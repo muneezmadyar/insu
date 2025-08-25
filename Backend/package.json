@@ -1,9 +1,10 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "api/server.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "node api/server.js",
+    "server": "nodemon api/server.js"
   },
   "keywords": [],
   "author": "",
@@ -19,5 +20,8 @@
     "multer": "^2.0.1",
     "multer-storage-cloudinary": "^4.0.0",
     "path": "^0.12.7"
+  },
+    "engines": {
+    "node": "18.x"
   }
 }
