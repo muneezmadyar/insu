@@ -24,9 +24,6 @@ const connection = mongoose.connection;
 connection.once("open", () => {
   console.log("MongoDB database connected successfully");
 });
-app.get("/", (req, res) => {
-  res.json({ message: "🚀 Backend working fine!" });
-});
 
 // ✅ Routes (File upload route first!)
 const planRoutes = require("./routes/plans");
