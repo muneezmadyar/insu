@@ -1,6 +1,6 @@
 # ignore env files
 *.env
-node_modules
+*node_modules
 
 
 # node_modules sab folder ka ignore
