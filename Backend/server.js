@@ -26,23 +26,23 @@ connection.once("open", () => {
 });
 
 // ✅ Routes (File upload route first!)
-const planRoutes = require("./routes/plans");
+const planRoutes = require("../routes/plans");
 app.use("/api/plans", planRoutes); // ⬅️ This uses multer, keep it BEFORE express.json
 
-const clientRoutes = require("./routes/clients");
-const adminRoutes = require("./routes/admin");
-const carDetailsRoutes = require("./routes/carDetails");
-const dropdownRoutes1 = require("./routes/dropdownRoutes");
+const clientRoutes = require("../routes/clients");
+const adminRoutes = require("../routes/admin");
+const carDetailsRoutes = require("../routes/carDetails");
+const dropdownRoutes1 = require("../routes/dropdownRoutes");
 // const surveyRoutes = require("./routes/survey.route.js")
-const bikePlanRoutes = require("./routes/bikeplan");
+const bikePlanRoutes = require("../routes/bikeplan");
 app.use("/api/bike-plans", bikePlanRoutes);
 
 
-const bikeDropdownRoutes = require("./routes/bikedropdown");
+const bikeDropdownRoutes = require("../routes/bikedropdown");
 app.use("/api/bikedropdowns", bikeDropdownRoutes);
 
 
-const bikeClients = require("./routes/bikeClients");
+const bikeClients = require("../routes/bikeClients");
 app.use("/api/bikeclients", bikeClients);
 // ✅ These can come after JSON middleware
 app.use("/api/car-details", carDetailsRoutes);
