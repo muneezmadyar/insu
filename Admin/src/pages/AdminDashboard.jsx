@@ -388,7 +388,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import AdminDropdownManager from "./AdminDropdownManager";
 import axios from "axios"; // ✅ REQUIRED
-import Bikeplan from "./bikeplan";
+import Bikeplan from "./bikeplan.jsx";
 import { toast } from "react-hot-toast";
 import BikeAdminDropdownManager from "./BikeAdminDropdownManager";
 // import BikeClientsDashboard from "./BikeClientsDashboard";

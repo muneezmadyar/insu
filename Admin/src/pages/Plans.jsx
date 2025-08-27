@@ -33,8 +33,8 @@
 // src/components/Plans.jsx
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import AdminDropdownManager from "./AdminDropdownManager";
-import Plans from "./Plans";
+import AdminDropdownManager from "./AdminDropdownManager.jsx";
+import Plans from "./Plans.jsx";
 
 const Plans = () => {
   const [clients, setClients] = useState([]);
