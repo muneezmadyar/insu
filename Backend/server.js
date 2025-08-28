@@ -10,7 +10,15 @@ const PORT = process.env.PORT || 5000;
 // const _dirname = path.resolve();
 
 // ✅ Middleware
-app.use(cors());
+app.use(cors({
+  origin: [
+    "http://localhost:5173",   // frontend
+    "http://localhost:5174",   // admin
+    "https://insu-licv.vercel.app", // deployed frontend
+    "https://your-admin.vercel.app"     // deployed admin
+  ],
+  credentials: true
+}));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use("/uploads", express.static("uploads"));
